@@ -1,0 +1,52 @@
+fetch("https://app.zoominfo.com/anura/zoominfo/hPeopleSearch", {
+    headers: {
+        accept: "application/json, text/plain, */*",
+        "accept-language": "en-US,en;q=0.9",
+        application: "DOZI",
+        "cache-control": "no-cache",
+        "content-type": "application/json",
+        pragma: "no-cache",
+        "sec-ch-ua": '"Chromium";v="106", "Google Chrome";v="106", "Not;A=Brand";v="99"',
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": '"macOS"',
+        "sec-fetch-dest": "empty",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-site": "same-origin",
+        "session-token": "1",
+        user: "30990504",
+        "x-sourceid": "ZI_FOR_SALES",
+        "x-ziaccesstoken":
+            "eyJraWQiOiJsejJoejBYY0Fmd25jQjdBazI1TXM1MTdfYjJPeWJMUk1TbVVwa0xnVExNIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULlVTNk4yZm5wanFBRktKTnZpUGxjYmYtbEhCSnNWOWUyd3FLSjB1clB4emciLCJpc3MiOiJodHRwczovL3pvb21pbmZvLWF1dGgub2t0YS5jb20vb2F1dGgyL2RlZmF1bHQiLCJhdWQiOiJhcGk6Ly9kZWZhdWx0IiwiaWF0IjoxNjY1MDgwODYyLCJleHAiOjE2NjUxMzQ4NjIsImNpZCI6IjBvYTk5ZHNtYm5BeGxldkYzNjk2IiwidWlkIjoiMDB1MWptYXM2a3JYdVlpYVI2OTciLCJzY3AiOlsib3BlbmlkIiwicHJvZmlsZSIsImVtYWlsIl0sImF1dGhfdGltZSI6MTY2NTA4MDg2MSwiemlVc2VybmFtZSI6InJ5YW5AcGVha2xlYWRzLmlvIiwic3ViIjoicnlhbkBwZWFrbGVhZHMuaW8iLCJmaXJzdE5hbWUiOiJSeWFuIiwibGFzdE5hbWUiOiJSb21hbiIsInppU2Vzc2lvblR5cGUiOi0zLCJ6aUdyb3VwSWQiOjAsInppVXNlcklkIjozMDk5MDUwNCwiemlUZW5hbnRJZCI6MjAyMTAwNzQsImVtYWlsIjoicnlhbkBwZWFrbGVhZHMuaW8iLCJzZkFjY291bnRJZCI6IjAwMTR5MDAwMDJnYndCTUFBWSIsInppTW9uZ29Vc2VySWQiOiIzMDk5MDUwNCIsInppUGxhdGZvcm1zIjpbIlpPT01JTkZPIiwiRE9aSSIsIkFETUlOIl19.fEMPqgf0oo1Z8fv3RfHR2bnz1IH277Y5xstcRrdv7_CjRgCJ-_ho66f5R8BIu0K_1UW6PwnQs6sNtZ0SgJAxSvbDQXSbFF6aYayMYPhRd7fSETF-FsbQF9hM6aTSpd_GusYNRVY3swaMCvaFCok9rhLE3yM2tHHbqorFYmprskElVPZ8CV_B4oqK-wYRJCSjLFyf7G7lNCuA94JNQvb7kyeK4JzYugezIrOKyKeRuEHjjnWyhMu4jEBf8xE6VBU4iMitlUJpcCs_dNbRMVXdg0Y3wR_ynyhI_ZOthHhbQVFao2FHT3uk6xPBX3aWvU0bug86qoOXs6FLu2GGm_fgLA",
+        "x-ziid":
+            "8s3EnNe_P1zyv-qeEry__x5l6yUZ1MdfaoiboGvHnPEIZOpnsBS60-L-fwlkyT3i7olNeDnncWv3TPuxlC5hCA",
+        "x-zisession":
+            "8s3EnNe_P1zyv-qeEry__x5l6yUZ1MdfaoiboGvHnPEIZOpnsBS60-L-fwlkyT3i7olNeDnncWtaoJhc6LOjsw3SGGWHjsOYl99NwBHCtpB2U5zdJ_R5EabersyAvwk0",
+        cookie: "_pxvid=eb55efd4-015b-11ed-8610-4e544f564561; oktaMachineId=b3b805f0-2486-8e49-4d4c-d59085faa15b; userZoomCompanyId=20210074; G_ENABLED_IDPS=google; GOOGAPPUID=395; amplitude_id_b497e086f6cb3da6baca4fcfa0bb09e8zoominfo.com=eyJkZXZpY2VJZCI6ImMwYjhlYmYwLWQxM2ItNDJjYy05MDZhLTdlZWRkOTExOGY2Y1IiLCJ1c2VySWQiOiIzMDk5MDUwNCIsIm9wdE91dCI6ZmFsc2UsInNlc3Npb25JZCI6MTY2MzY5NDcxNDE0MCwibGFzdEV2ZW50VGltZSI6MTY2MzY5NDcyMDAwOCwiZXZlbnRJZCI6MTQwLCJpZGVudGlmeUlkIjoxNTYsInNlcXVlbmNlTnVtYmVyIjoxNTV9; totango.heartbeat.last_module=DOZI; amplitude_id_76844199b7cccb579d7fb54775130a44_instance-admin-portalzoominfo.com=eyJkZXZpY2VJZCI6ImI0MGRlMDRhLTI5YWMtNDNlMi05NTFiLWZhOGE5YzBkNjRmOVIiLCJ1c2VySWQiOiIzMDk5MDUwNCIsIm9wdE91dCI6ZmFsc2UsInNlc3Npb25JZCI6MTY2NDgzNTM0OTcyNywibGFzdEV2ZW50VGltZSI6MTY2NDgzNjMyNTExMSwiZXZlbnRJZCI6MjAsImlkZW50aWZ5SWQiOjMzNiwic2VxdWVuY2VOdW1iZXIiOjM1Nn0=; dontShowInputTooltip=true; doziUser=ryan%40peakleads.io; ziid=8s3EnNe_P1zyv-qeEry__x5l6yUZ1MdfaoiboGvHnPEIZOpnsBS60-L-fwlkyT3i7olNeDnncWv3TPuxlC5hCA; zisession=8s3EnNe_P1zyv-qeEry__x5l6yUZ1MdfaoiboGvHnPEIZOpnsBS60-L-fwlkyT3i7olNeDnncWtaoJhc6LOjsw3SGGWHjsOYl99NwBHCtpB2U5zdJ_R5EabersyAvwk0; ziaccesstoken=eyJraWQiOiJsejJoejBYY0Fmd25jQjdBazI1TXM1MTdfYjJPeWJMUk1TbVVwa0xnVExNIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULlVTNk4yZm5wanFBRktKTnZpUGxjYmYtbEhCSnNWOWUyd3FLSjB1clB4emciLCJpc3MiOiJodHRwczovL3pvb21pbmZvLWF1dGgub2t0YS5jb20vb2F1dGgyL2RlZmF1bHQiLCJhdWQiOiJhcGk6Ly9kZWZhdWx0IiwiaWF0IjoxNjY1MDgwODYyLCJleHAiOjE2NjUxMzQ4NjIsImNpZCI6IjBvYTk5ZHNtYm5BeGxldkYzNjk2IiwidWlkIjoiMDB1MWptYXM2a3JYdVlpYVI2OTciLCJzY3AiOlsib3BlbmlkIiwicHJvZmlsZSIsImVtYWlsIl0sImF1dGhfdGltZSI6MTY2NTA4MDg2MSwiemlVc2VybmFtZSI6InJ5YW5AcGVha2xlYWRzLmlvIiwic3ViIjoicnlhbkBwZWFrbGVhZHMuaW8iLCJmaXJzdE5hbWUiOiJSeWFuIiwibGFzdE5hbWUiOiJSb21hbiIsInppU2Vzc2lvblR5cGUiOi0zLCJ6aUdyb3VwSWQiOjAsInppVXNlcklkIjozMDk5MDUwNCwiemlUZW5hbnRJZCI6MjAyMTAwNzQsImVtYWlsIjoicnlhbkBwZWFrbGVhZHMuaW8iLCJzZkFjY291bnRJZCI6IjAwMTR5MDAwMDJnYndCTUFBWSIsInppTW9uZ29Vc2VySWQiOiIzMDk5MDUwNCIsInppUGxhdGZvcm1zIjpbIlpPT01JTkZPIiwiRE9aSSIsIkFETUlOIl19.fEMPqgf0oo1Z8fv3RfHR2bnz1IH277Y5xstcRrdv7_CjRgCJ-_ho66f5R8BIu0K_1UW6PwnQs6sNtZ0SgJAxSvbDQXSbFF6aYayMYPhRd7fSETF-FsbQF9hM6aTSpd_GusYNRVY3swaMCvaFCok9rhLE3yM2tHHbqorFYmprskElVPZ8CV_B4oqK-wYRJCSjLFyf7G7lNCuA94JNQvb7kyeK4JzYugezIrOKyKeRuEHjjnWyhMu4jEBf8xE6VBU4iMitlUJpcCs_dNbRMVXdg0Y3wR_ynyhI_ZOthHhbQVFao2FHT3uk6xPBX3aWvU0bug86qoOXs6FLu2GGm_fgLA; parseSessionToken=1; userId=30990504; userEmail=ryan%40peakleads.io; email=ryan%40peakleads.io; name=Ryan%20Roman; firstname=Ryan; analyticsId=30990504; allowedIntegrations=%5B%22zoho%22%5D; userEmail=ryan%40peakleads.io; totango.heartbeat.last_ts=1665081491564; __cf_bm=Bwu_wIbLEsbPmGfLGgxvmgb5bHjvC4fxxSLoYvUGijs-1665081540-0-AWbmtwP7w7MTXIpPnVQyGRBM5qfn0FqxhTcgwWEOUeklhTyiSfqvKu/eS205f9Vog3RBoiv7PRXFpwGY2UyKHQs=; _dd_s=rum=0&expire=1665082440286; amplitude_id_1fdb430772917607bcabf67618d7f288zoominfo.com=eyJkZXZpY2VJZCI6IjU5ZGU0M2U1LWY1MmEtNDkwMy1iZWU5LTI2YWNlNjJhNDhmN1IiLCJ1c2VySWQiOiIzMDk5MDUwNCIsIm9wdE91dCI6ZmFsc2UsInNlc3Npb25JZCI6MTY2NTA4MDg2NTMyMSwibGFzdEV2ZW50VGltZSI6MTY2NTA4MTU0Mzc5MywiZXZlbnRJZCI6MzM3LCJpZGVudGlmeUlkIjoxMTcsInNlcXVlbmNlTnVtYmVyIjo0NTR9; amplitude_id_b497e086f6cb3da6baca4fcfa0bb09e8_engageamplitudezoominfo.com=eyJkZXZpY2VJZCI6ImRiYzU2ZDk0LWZhYmMtNGFhNS1iMmIyLWU2YjM5Njg2MmI0ZlIiLCJ1c2VySWQiOm51bGwsIm9wdE91dCI6ZmFsc2UsInNlc3Npb25JZCI6MTY2NTA4MDg2NjgzMCwibGFzdEV2ZW50VGltZSI6MTY2NTA4MTU0NTcwOCwiZXZlbnRJZCI6MCwiaWRlbnRpZnlJZCI6MCwic2VxdWVuY2VOdW1iZXIiOjB9; amplitude_id_14ff67f4fc837e2a741f025afb61859czoominfo.com=eyJkZXZpY2VJZCI6IjdjMzkxMzQwLWRlMmItNDZlNC05MDYxLTdjZTZhZjViODdhN1IiLCJ1c2VySWQiOiIzMDk5MDUwNCIsIm9wdE91dCI6ZmFsc2UsInNlc3Npb25JZCI6MTY2NTA3NDY3NTY3NiwibGFzdEV2ZW50VGltZSI6MTY2NTA4MTU0NTgyNiwiZXZlbnRJZCI6MTA1MiwiaWRlbnRpZnlJZCI6MjE2LCJzZXF1ZW5jZU51bWJlciI6MTI2OH0=",
+        Referer: "https://app.zoominfo.com/",
+        "Referrer-Policy": "same-origin",
+    },
+    body: '{"rpp":25,"sortBy":"Relevance,company_id","sortOrder":"desc,desc","personTitle":"facility OR facilities OR real estate OR property OR construction OR maintenance","companyName":"srpnet.com","state":"Arizona","companyPastOrPresent":"1","excludeNoCompany":"true","excludeDefunctCompanies":true,"returnOnlyBoardMembers":false,"excludeBoardMembers":true,"contactRequirements":"","confidenceScoreMin":85,"confidenceScoreMax":99,"isCertified":"include","inputCurrencyCode":"USD","outputCurrencyCode":"USD","page":1,"feature":"People Search - UI"}',
+    method: "POST",
+});
+
+let body = {
+    rpp: 25,
+    sortBy: "Relevance,company_id",
+    sortOrder: "desc,desc",
+    personTitle: "facility OR facilities OR real estate OR property OR construction OR maintenance",
+    companyName: "srpnet.com",
+    state: "Arizona",
+    companyPastOrPresent: "1",
+    excludeNoCompany: "true",
+    excludeDefunctCompanies: true,
+    returnOnlyBoardMembers: false,
+    excludeBoardMembers: true,
+    contactRequirements: "",
+    confidenceScoreMin: 85,
+    confidenceScoreMax: 99,
+    isCertified: "include",
+    inputCurrencyCode: "USD",
+    outputCurrencyCode: "USD",
+    page: 1,
+    feature: "People Search - UI",
+};
